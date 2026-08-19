@@ -57,7 +57,7 @@ See [`docs/architecture/part-1.md`](docs/architecture/part-1.md).
 ## Quick start
 
 ```bash
-git clone https://github.com/YOUR-GITHUB-USERNAME/missionops-ai.git
+git clone https://github.com/Arcell78/missionops-ai.git
 cd missionops-ai
 python -m venv .venv
 ```
