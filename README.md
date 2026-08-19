@@ -51,7 +51,7 @@ flowchart LR
     E --> F[Human Review]
     F --> G[Authorized Human Decision]
 ```
-**Safety boundary**  MissionOps v0.1 does not execute automated production actions. Human review remains required before any operational decision.
+**Safety boundary:**  MissionOps v0.1 does not execute automated production actions. Human review remains required before any operational decision.
 
 See [`docs/architecture/part-1.md`](docs/architecture/part-1.md).
 
