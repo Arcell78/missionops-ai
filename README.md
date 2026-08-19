@@ -45,12 +45,13 @@ MissionOps v0.1 focuses on:
 ```mermaid
 flowchart LR
     A[Unstructured Incident Description] --> B[OpenAI Responses API]
-    B --> C[Prompt + Decision Criteria]
+    B --> C[Prompt and Decision Criteria]
     C --> D[Structured Output]
     D --> E[Validated Triage Object]
     E --> F[Human Review]
-    F -. no automated production action in v0.1 .-> G[Authorized Human Decision]
+    F --> G[Authorized Human Decision]
 ```
+**Safety boundary**  MissionOps v0.1 does not execute automated production actions. Human review remains required before any operational decision.
 
 See [`docs/architecture/part-1.md`](docs/architecture/part-1.md).
 
