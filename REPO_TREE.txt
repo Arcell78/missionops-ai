@@ -1,0 +1,51 @@
+.env.example
+[DIR] .github
+  [DIR] workflows
+    python-checks.yml
+.gitignore
+CONTRIBUTING.md
+README.md
+SECURITY.md
+[DIR] docs
+  [DIR] adr
+    ADR-001-start-with-behavior.md
+  [DIR] architecture
+    part-1.md
+  [DIR] assets
+    .gitkeep
+    missionops-api-foundations.png
+[DIR] evals
+  README.md
+  incidents.json
+  [DIR] results
+    .gitkeep
+  run_eval.py
+[DIR] examples
+  sample_incidents.json
+[DIR] notebooks
+  missionops_v01_colab.ipynb
+pyproject.toml
+requirements-dev.txt
+requirements.txt
+[DIR] session-1-api-foundations
+  README.md
+[DIR] session-2-agents
+  README.md
+[DIR] session-3-realtime
+  README.md
+[DIR] session-4-rag
+  README.md
+[DIR] session-5-production
+  README.md
+[DIR] src
+  [DIR] missionops
+    __init__.py
+    __main__.py
+    cli.py
+    config.py
+    prompts.py
+    schemas.py
+    triage.py
+[DIR] tests
+  test_eval_data.py
+  test_schema.py

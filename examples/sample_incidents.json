@@ -1,0 +1,17 @@
+[
+  {
+    "id": "sample-deployment",
+    "title": "Deployment-related availability incident",
+    "incident": "The citizen services portal began returning intermittent HTTP 503 responses approximately 12 minutes after deployment v3.8.2. Users can occasionally authenticate, but downstream requests frequently fail."
+  },
+  {
+    "id": "sample-security",
+    "title": "Privileged-login anomaly",
+    "incident": "Multiple failed administrator login attempts originated from an unfamiliar IP address, followed by one successful privileged login. No additional identity or endpoint telemetry is currently available."
+  },
+  {
+    "id": "sample-ambiguous",
+    "title": "Insufficient evidence",
+    "incident": "Several users report that the application feels slow today. No latency metrics, error rates, affected service names, or recent change information were included in the report."
+  }
+]

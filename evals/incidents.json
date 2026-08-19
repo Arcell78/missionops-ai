@@ -1,0 +1,302 @@
+[
+  {
+    "id": "AVAIL-001",
+    "input": "All public-facing application endpoints are returning HTTP 503 errors across every region.",
+    "expected": {
+      "category": "availability",
+      "severity": "high",
+      "escalation_required": true,
+      "recommended_action": "escalate"
+    }
+  },
+  {
+    "id": "AVAIL-002",
+    "input": "A single non-critical internal service is intermittently unavailable for a subset of users.",
+    "expected": {
+      "category": "availability",
+      "severity": "medium",
+      "escalation_required": false,
+      "recommended_action": "investigate"
+    }
+  },
+  {
+    "id": "AVAIL-003",
+    "input": "The primary citizen services portal is fully unavailable during peak filing hours and all requests are failing.",
+    "expected": {
+      "category": "availability",
+      "severity": "critical",
+      "escalation_required": true,
+      "recommended_action": "escalate"
+    }
+  },
+  {
+    "id": "PERF-001",
+    "input": "API latency increased from 300 ms to 4 seconds while error rates remain normal.",
+    "expected": {
+      "category": "performance",
+      "severity": "medium",
+      "escalation_required": false,
+      "recommended_action": "investigate"
+    }
+  },
+  {
+    "id": "PERF-002",
+    "input": "Authentication latency has increased to 15 seconds across all regions and user transactions are timing out.",
+    "expected": {
+      "category": "performance",
+      "severity": "high",
+      "escalation_required": true,
+      "recommended_action": "escalate"
+    }
+  },
+  {
+    "id": "PERF-003",
+    "input": "Users say the application feels slower than usual but no service names, metrics, time window, or impact details were provided.",
+    "expected": {
+      "category": "unknown",
+      "severity": "low",
+      "escalation_required": false,
+      "recommended_action": "request_more_information"
+    }
+  },
+  {
+    "id": "SEC-001",
+    "input": "Multiple failed administrator logins were followed by a successful privileged login from an unfamiliar IP address.",
+    "expected": {
+      "category": "security",
+      "severity": "critical",
+      "escalation_required": true,
+      "recommended_action": "escalate"
+    }
+  },
+  {
+    "id": "SEC-002",
+    "input": "An access key was discovered in a public code repository and may still be active.",
+    "expected": {
+      "category": "security",
+      "severity": "high",
+      "escalation_required": true,
+      "recommended_action": "escalate"
+    }
+  },
+  {
+    "id": "SEC-003",
+    "input": "A user received an unexpected MFA prompt but no successful login or account changes have been reported.",
+    "expected": {
+      "category": "security",
+      "severity": "medium",
+      "escalation_required": true,
+      "recommended_action": "investigate"
+    }
+  },
+  {
+    "id": "DEP-001",
+    "input": "HTTP 503 errors began 12 minutes after deployment v3.8.2 and downstream requests now frequently fail.",
+    "expected": {
+      "category": "deployment",
+      "severity": "high",
+      "escalation_required": true,
+      "recommended_action": "investigate"
+    }
+  },
+  {
+    "id": "DEP-002",
+    "input": "A newly deployed service is producing elevated warning logs but no user impact has been observed.",
+    "expected": {
+      "category": "deployment",
+      "severity": "medium",
+      "escalation_required": false,
+      "recommended_action": "investigate"
+    }
+  },
+  {
+    "id": "DEP-003",
+    "input": "Service errors began 25 minutes before the latest deployment started, although the deployment completed successfully afterward.",
+    "expected": {
+      "category": "availability",
+      "severity": "high",
+      "escalation_required": true,
+      "recommended_action": "escalate"
+    }
+  },
+  {
+    "id": "DB-001",
+    "input": "Applications report database connection-pool exhaustion and requests are timing out across multiple services.",
+    "expected": {
+      "category": "database",
+      "severity": "high",
+      "escalation_required": true,
+      "recommended_action": "escalate"
+    }
+  },
+  {
+    "id": "DB-002",
+    "input": "A reporting database replica is 20 minutes behind the primary but production transactions are unaffected.",
+    "expected": {
+      "category": "database",
+      "severity": "medium",
+      "escalation_required": false,
+      "recommended_action": "investigate"
+    }
+  },
+  {
+    "id": "DB-003",
+    "input": "The primary database is unreachable and all write transactions are failing.",
+    "expected": {
+      "category": "database",
+      "severity": "critical",
+      "escalation_required": true,
+      "recommended_action": "escalate"
+    }
+  },
+  {
+    "id": "NET-001",
+    "input": "Intermittent packet loss between application and database tiers is causing repeated request failures.",
+    "expected": {
+      "category": "network",
+      "severity": "high",
+      "escalation_required": true,
+      "recommended_action": "escalate"
+    }
+  },
+  {
+    "id": "NET-002",
+    "input": "One availability zone shows elevated network latency, but traffic continues through healthy zones.",
+    "expected": {
+      "category": "network",
+      "severity": "medium",
+      "escalation_required": false,
+      "recommended_action": "investigate"
+    }
+  },
+  {
+    "id": "NET-003",
+    "input": "Connectivity between the on-premises environment and cloud production network is completely unavailable.",
+    "expected": {
+      "category": "network",
+      "severity": "critical",
+      "escalation_required": true,
+      "recommended_action": "escalate"
+    }
+  },
+  {
+    "id": "MIX-001",
+    "input": "CPU utilization on application nodes is above 95 percent while service availability remains normal and latency is rising.",
+    "expected": {
+      "category": "performance",
+      "severity": "medium",
+      "escalation_required": false,
+      "recommended_action": "investigate"
+    }
+  },
+  {
+    "id": "MIX-002",
+    "input": "A configuration release completed successfully, then error rates rose sharply within five minutes across the affected service.",
+    "expected": {
+      "category": "deployment",
+      "severity": "high",
+      "escalation_required": true,
+      "recommended_action": "investigate"
+    }
+  },
+  {
+    "id": "MIX-003",
+    "input": "A privileged account created a new administrator user and disabled audit logging outside the normal change window.",
+    "expected": {
+      "category": "security",
+      "severity": "critical",
+      "escalation_required": true,
+      "recommended_action": "escalate"
+    }
+  },
+  {
+    "id": "INFO-001",
+    "input": "Something is broken in production.",
+    "expected": {
+      "category": "unknown",
+      "severity": "low",
+      "escalation_required": false,
+      "recommended_action": "request_more_information"
+    }
+  },
+  {
+    "id": "INFO-002",
+    "input": "The help desk says there may be a network issue but no affected systems, symptoms, or telemetry were supplied.",
+    "expected": {
+      "category": "unknown",
+      "severity": "low",
+      "escalation_required": false,
+      "recommended_action": "request_more_information"
+    }
+  },
+  {
+    "id": "INFO-003",
+    "input": "A customer reported an error but did not provide the application name, error message, time, or business impact.",
+    "expected": {
+      "category": "unknown",
+      "severity": "low",
+      "escalation_required": false,
+      "recommended_action": "request_more_information"
+    }
+  },
+  {
+    "id": "RISK-001",
+    "input": "Endpoint protection detected credential dumping activity on a server hosting privileged administrative tools.",
+    "expected": {
+      "category": "security",
+      "severity": "critical",
+      "escalation_required": true,
+      "recommended_action": "escalate"
+    }
+  },
+  {
+    "id": "RISK-002",
+    "input": "Emergency dispatch users cannot access the mission-critical application and no workaround is available.",
+    "expected": {
+      "category": "availability",
+      "severity": "critical",
+      "escalation_required": true,
+      "recommended_action": "escalate"
+    }
+  },
+  {
+    "id": "RISK-003",
+    "input": "Database replication has stopped and recovery point objectives may be exceeded if the issue continues.",
+    "expected": {
+      "category": "database",
+      "severity": "high",
+      "escalation_required": true,
+      "recommended_action": "escalate"
+    }
+  },
+  {
+    "id": "EDGE-001",
+    "input": "A deployment occurred ten minutes ago and one isolated endpoint is returning errors, but overall availability remains above target.",
+    "expected": {
+      "category": "deployment",
+      "severity": "medium",
+      "escalation_required": false,
+      "recommended_action": "investigate"
+    }
+  },
+  {
+    "id": "EDGE-002",
+    "input": "A batch job temporarily increased CPU utilization and latency, but both are already returning to baseline without user impact.",
+    "expected": {
+      "category": "performance",
+      "severity": "medium",
+      "escalation_required": false,
+      "recommended_action": "monitor"
+    }
+  },
+  {
+    "id": "EDGE-003",
+    "input": "DNS resolution is intermittently slow for one internal service, while other services and external access remain healthy.",
+    "expected": {
+      "category": "network",
+      "severity": "medium",
+      "escalation_required": false,
+      "recommended_action": "investigate"
+    }
+  }
+]
